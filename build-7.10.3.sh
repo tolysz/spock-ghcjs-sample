@@ -25,6 +25,7 @@ mkdir -p static
 
 cp `stackjs path --local-install-root`/bin/project-frontend-exe.jsexe/* static
 
-`stack7 path --local-install-root`/bin/project-backend-exe
+cp `stack7 path --local-install-root`/bin/project-backend-exe .
+./project-backend-exe
 
 PATH=$OLDPATH

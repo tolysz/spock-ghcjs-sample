@@ -7,6 +7,8 @@ import Web.Spock.Config
 import Control.Monad.Trans
 import Data.Monoid
 import Data.IORef
+import Text.Read (readMaybe)
+import Data.Maybe
 import qualified Data.Text as T
 import qualified MyProject.Api.User as A
 import Network.Wai.Middleware.Static
@@ -15,11 +17,14 @@ import Network.Wai.Middleware.Rewrite
 import MyProject.Types
 import MyProject.Api.Server.User
 
+import System.Environment
+
 main :: IO ()
 main = do
   ref <- newIORef 0
+  myAppPort <- readMaybe <$> getEnv "PORT"
   spockCfg <- defaultSpockCfg EmptySession PCNoDatabase (DummyAppState ref)
-  runSpock 8080 (spock spockCfg app)
+  runSpock (maybe 8080 id myAppPort) (spock spockCfg app)
 
 
 app :: Application ()

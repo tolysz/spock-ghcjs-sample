@@ -1,0 +1,6 @@
+
+stanzas:
+    - type: webapp
+      host: spock8.kio.sx
+      exec: ../project-backend-exe
+      requires-secure: true

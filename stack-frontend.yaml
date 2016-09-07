@@ -1,0 +1,25 @@
+resolver: lts-6.15
+compiler: ghcjs-0.2.0.9006015_ghc-7.10.3
+compiler-check: match-exact
+
+setup-info:
+  ghcjs:
+    source:
+      ghcjs-0.2.0.9006015_ghc-7.10.3:
+         url: "https://tolysz.org/ghcjs/lts-6.15-9006015.tar.gz"
+         sha1: 4d513006622bf428a3c983ca927837e3d14ab687
+
+allow-newer: true
+
+packages:
+  - project-api
+  - project-frontend
+  - location:
+      git: https://github.com/agrafix/Spock
+      commit: 77333a2de5dea0dc8eba9432ab16864e93e5d70e
+    extra-dep: true
+    subdirs:
+      - Spock-api
+      - Spock-api-ghcjs
+      - reroute
+

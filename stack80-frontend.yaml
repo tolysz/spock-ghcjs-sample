@@ -5,7 +5,7 @@ setup-info:
   ghcjs:
     source:
       ghcjs-0.2.0.820160904_ghc-8.0.1:
-         url: "http://tolysz.org/ghcjs/untested/ghc-8.0-2016-09-05-nightly-2016-09-04-820160904.tar.gz"
+         url: "http://tolysz.org/ghcjs/ghc-8.0-2016-09-05-nightly-2016-09-04-820160904.tar.gz"
          sha1: "cf4383b77f9d712133bdf54e6389c4361c57b484"
 allow-newer: true
 

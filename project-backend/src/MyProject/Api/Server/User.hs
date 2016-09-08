@@ -1,4 +1,4 @@
-
+{-# LANGUAGE RecordWildCards #-}
 module MyProject.Api.Server.User
     ( api )
 where
@@ -17,5 +17,6 @@ import Web.Spock.Api.Server
 api :: Application ()
 api = defEndpoint A.loginUser loginHandler
 
--- loginHandler :: A.LoginReq -> Action A.LoginResp
+loginHandler :: A.LoginReq -> Action A.LoginResp
 loginHandler r = pure A.LoginFailed
+-- loginHandler A.LoginReq{..} = pure $ A.LoginOkay lr_username

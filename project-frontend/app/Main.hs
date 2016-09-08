@@ -26,11 +26,16 @@ main = do
     Just doc <- webViewGetDomDocument webView
     Just body <- getBody doc
     setInnerHTML body (Just ("<h1>Hello World</h1>" :: T.Text))
+    addP doc body ("Login result was: " ++ show res)
     on doc click $ do
         (x, y) <- mouseClientXY
-        Just newParagraph <- createElement doc (Just ("p":: T.Text))
-        text <- createTextNode doc $ "Click " ++ show (x, y)
-        appendChild newParagraph text
-        appendChild body (Just newParagraph)
+        addP doc body $ "Click " ++ show (x, y)
         return ()
     return ()
+
+addP doc body txt = do
+        Just newParagraph <- createElement doc (Just ("p":: T.Text))
+        text <- createTextNode doc txt
+        appendChild newParagraph text
+        appendChild body (Just newParagraph)
+

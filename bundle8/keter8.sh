@@ -14,5 +14,5 @@ cp -r static $OLD
 cd $OLD 
 
 tar -zcvpf spock8.keter config/keter.yaml project-backend-exe static
-scp spock.keter spock8.kio.sx:keter
+scp spock8.keter spock8.kio.sx:keter
 

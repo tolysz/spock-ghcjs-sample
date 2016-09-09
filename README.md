@@ -8,3 +8,5 @@ Run one at a time to see [`spock`](https://www.spock.li/tutorial/)  and [`ghcjs`
 One can test it:
 ghc-8.0.1: https://spock8.kio.sx
 ghc-7.10.3: https://spock.kio.sx
+
+All this was tested using [`node-6.5.0`](https://nodejs.org/en/)

@@ -1,4 +1,4 @@
-resolver: nightly-2016-09-04
+resolver: nightly-2016-09-08
 packages:
   - project-backend
   - project-api

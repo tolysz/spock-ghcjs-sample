@@ -14,7 +14,7 @@ PATH=`stack7 path --bin-path 2>/dev/null`:$OLDPATH
 echo SETUP
 stackjs setup
 
-ls `stackjs path --local-install-root`/bin/project-frontend-exe.jsexe
+# ls `stackjs path --local-install-root`/bin/project-frontend-exe.jsexe
 
 stackjs build
 # copy something somwhere
@@ -26,6 +26,6 @@ mkdir -p static
 cp `stackjs path --local-install-root`/bin/project-frontend-exe.jsexe/* static
 
 cp `stack7 path --local-install-root`/bin/project-backend-exe .
-./project-backend-exe
+echo ./project-backend-exe
 
 PATH=$OLDPATH

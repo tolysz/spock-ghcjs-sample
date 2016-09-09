@@ -38,4 +38,3 @@ addP doc body txt = do
         text <- createTextNode doc txt
         appendChild newParagraph text
         appendChild body (Just newParagraph)
-

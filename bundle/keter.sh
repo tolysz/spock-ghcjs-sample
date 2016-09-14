@@ -7,7 +7,7 @@ cd ..
 
 rm static/*
 
-./build-7.10.3.sh
+./build-lts.sh
 upx-ucl project-backend-exe
 
 cp project-backend-exe $OLD

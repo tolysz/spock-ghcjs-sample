@@ -1,4 +1,4 @@
-resolver: lts-6.16
+resolver: lts-7.0
 packages:
   - project-backend
   - project-api

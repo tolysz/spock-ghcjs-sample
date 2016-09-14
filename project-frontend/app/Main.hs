@@ -1,3 +1,4 @@
+{-# Language CPP,QuasiQuotes #-}
 
 module Main (
     main
@@ -14,11 +15,13 @@ import GHCJS.DOM.Document (getBody, createElement, createTextNode, click)
 import GHCJS.DOM.Element (setInnerHTML)
 import GHCJS.DOM.Node (appendChild)
 import GHCJS.DOM.EventM (on, mouseClientXY)
+import Data.String.QM
 
 type SessionId = T.Text
 
 main = do
-  Just res <- callEndpoint loginUser (LoginReq "alex" "alexcool")
+  compileInfo
+  res <- callEndpoint loginUser (LoginReq "alex" "alexcool")
   putStrLn ("Login result was: " ++ show res)
 
   runWebGUI $ \ webView -> do
@@ -38,3 +41,11 @@ addP doc body txt = do
         text <- createTextNode doc txt
         appendChild newParagraph text
         appendChild body (Just newParagraph)
+
+
+compileInfo = do
+   putStrLn [qq|
+            __DATE__
+            __TIME__
+            __GLASGOW_HASKELL__
+   |]

@@ -30,8 +30,10 @@ executable project-frontend-exe
                      , ghcjs-dom
                      , text
                      , mtl
+                     , rawstring-qm
   default-language:    Haskell2010
   default-extensions:   OverloadedStrings
+  cpp-options: -DGHCJS_BROWSER
 
 test-suite project-frontend-test
   type:                exitcode-stdio-1.0

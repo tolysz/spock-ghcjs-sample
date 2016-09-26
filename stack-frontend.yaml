@@ -6,7 +6,7 @@ setup-info:
   ghcjs:
     source:
       ghcjs-0.2.1.9007001_ghc-8.0.1:
-          url: http://tolysz.org/ghcjs/untested/ghc-8.0-2016-09-26-lts-7.1-9007001-mem.tar.gz
+          url: http://tolysz.org/ghcjs/ghc-8.0-2016-09-26-lts-7.1-9007001-mem.tar.gz
           sha1: e640724883238593e2d2f7f03991cb413ec0347b
 
 allow-newer: true

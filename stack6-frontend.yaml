@@ -1,13 +1,13 @@
-resolver: lts-7.1
-compiler: ghcjs-0.2.1.9007001_ghc-8.0.1
+resolver: lts-6.18
+compiler: ghcjs-0.2.0.9006018_ghc-7.10.3
 compiler-check: match-exact
 
 setup-info:
   ghcjs:
     source:
-      ghcjs-0.2.1.9007001_ghc-8.0.1:
-          url: http://tolysz.org/ghcjs/untested/ghc-8.0-2016-09-26-lts-7.1-9007001-mem.tar.gz
-          sha1: e640724883238593e2d2f7f03991cb413ec0347b
+      ghcjs-0.2.0.9006018_ghc-7.10.3:
+         url: http://tolysz.org/ghcjs/untested/lts-6.18-9006018.tar.gz
+         sha1: 3e9f345116c851349a5a551ffd94f7e0b74bfabb
 
 allow-newer: true
 

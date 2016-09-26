@@ -26,3 +26,6 @@ data User
 
 loginUser :: Endpoint '[] ('Just LoginReq) LoginResp
 loginUser = MethodPost Proxy ("api" <//> "user" <//> "auth")
+
+loginUser1 :: Endpoint '[] ('Just LoginReq) LoginResp
+loginUser1 = MethodPost Proxy ("api" <//> "user" <//> "auth")

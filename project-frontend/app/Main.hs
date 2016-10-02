@@ -32,6 +32,7 @@ main = do
     addP doc body ("Login result was: " ++ show res)
     addPre doc body ([qq|
   ghc: VERSION_ghc
+  ghc: VERSION_ghcjs
   base: VERSION_base
   ghcjs-base: VERSION_ghcjs_base
   ghcjs-dom: VERSION_ghcjs_dom

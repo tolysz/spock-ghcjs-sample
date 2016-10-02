@@ -16,6 +16,7 @@ stackjs setup
 
 # ls `stackjs path --local-install-root`/bin/project-frontend-exe.jsexe
 
+#stackjs clean
 stackjs build
 # copy something somwhere
 stack7 build

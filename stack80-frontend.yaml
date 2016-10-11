@@ -1,12 +1,12 @@
-resolver: nightly-2016-09-08
-compiler: ghcjs-0.2.0.820160908_ghc-8.0.1
+resolver: nightly-2016-10-05
+compiler: ghcjs-0.2.1.820161005_ghc-8.0.1
 compiler-check: match-exact
 setup-info:
   ghcjs:
     source:
-      ghcjs-0.2.0.820160908_ghc-8.0.1:
-         url: "http://tolysz.org/ghcjs/untested/ghc-8.0-2016-09-08-nightly-2016-09-08-820160908.tar.gz"
-         sha1: 68ab94c735ba5173603fb24fa7804541600750e1
+      ghcjs-0.2.1.820161005_ghc-8.0.1:
+         url: "http://ghcjs.tolysz.org/ghc-8.0-2016-10-05-nightly-2016-10-05-820161005.tar.gz"
+         sha1: d5eaa1fd34080c3102bbad5343d01fd066d387b6
 allow-newer: true
 
 packages:
@@ -24,3 +24,4 @@ packages:
 extra-deps:
 - ghcjs-dom-0.3.1.0
 - ghcjs-dom-jsffi-0.3.1.0
+- rawstring-qm-0.2.2.2

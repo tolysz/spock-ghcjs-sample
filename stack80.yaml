@@ -1,4 +1,4 @@
-resolver: nightly-2016-09-08
+resolver: nightly-2016-10-05
 packages:
   - project-backend
   - project-api
@@ -12,3 +12,6 @@ packages:
       - Spock-api
       - Spock-api-server
       - reroute
+
+# extra-deps:
+# - haskell-src-meta-0.7.0.0

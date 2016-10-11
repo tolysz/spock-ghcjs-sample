@@ -39,6 +39,7 @@ executable project-backend-exe
                      , mtl
                      , wai-extra
                      , wai-middleware-static
+                     , rawstring-qm
 --                     , wai
 
   default-language:    Haskell2010

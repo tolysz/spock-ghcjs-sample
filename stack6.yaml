@@ -1,4 +1,4 @@
-resolver: lts-6.20
+resolver: lts-6.21
 packages:
   - project-backend
   - project-api
@@ -12,3 +12,6 @@ packages:
       - Spock-api
       - Spock-api-server
       - reroute
+
+extra-deps:
+- rawstring-qm-0.2.2.2

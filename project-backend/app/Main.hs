@@ -1,4 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE QuasiQuotes #-}
 module Main where
 
 import Web.Spock
@@ -13,6 +14,7 @@ import qualified Data.Text as T
 import qualified MyProject.Api.User as A
 import Network.Wai.Middleware.Static
 import Network.Wai.Middleware.Rewrite
+import Data.String.QM
 
 import MyProject.Types
 import MyProject.Api.Server.User

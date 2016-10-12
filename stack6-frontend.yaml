@@ -6,7 +6,7 @@ setup-info:
   ghcjs:
     source:
       ghcjs-0.2.0.9006021_ghc-7.10.3:
-         url: http://tolysz.org/ghcjs/lts-6.21-9006021.tar.gz
+         url: http://ghcjs.tolysz.org/lts-6.21-9006021.tar.gz
          sha1: 80b83f85dcec182093418e843979f4cee092fa85
 
 allow-newer: true

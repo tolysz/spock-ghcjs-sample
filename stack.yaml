@@ -1,17 +1,7 @@
-resolver: lts-7.3
+resolver: lts-7.4
 packages:
   - project-backend
   - project-api
-  - location:
-      git: https://github.com/agrafix/Spock
-      commit: 77333a2de5dea0dc8eba9432ab16864e93e5d70e
-    extra-dep: true
-    subdirs:
-      - Spock
-      - Spock-core
-      - Spock-api
-      - Spock-api-server
-      - reroute
 
 extra-deps:
 - rawstring-qm-0.2.2.2

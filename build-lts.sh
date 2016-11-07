@@ -8,7 +8,7 @@ alias stackjs='stack --stack-yaml stack-frontend.yaml'
 alias stack7='stack --stack-yaml stack.yaml'
 
 stack7 setup
-stack7 install alex happy hscolour
+stack7 install alex happy hscolour hsc2hs
 PATH=`stack7 path --bin-path 2>/dev/null`:$OLDPATH
 
 echo SETUP

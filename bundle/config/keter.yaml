@@ -4,3 +4,8 @@ stanzas:
       host: spock.kio.sx
       exec: ../project-backend-exe
       requires-secure: true
+      ssl:
+        key: /opt/certs/spock.kio.sx/privkey.pem
+        certificate: /opt/certs/spock.kio.sx/cert.pem
+        chain-certificates:
+        - /opt/certs/spock.kio.sx/chain.pem
